@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+   <title>Table with Boba Orders</title> 
+</head>
+<style>table,th,td{
+    border: solid tan
+}</style>
+   
+<body>
+
+<h1>Table with Boba Orders</h1>
+<br>
+<table>
+    <tr>
+        <th>Drink Name</th>
+        <th>Size</th>
+        <th>Ice Level</th>
+        <th>Sugar Level</th>
+        <th>Topping</th>
+    </tr>
+
+    <tr>
+        <td>Latte</td>
+        <td>M</td>
+        <td>50%</td>
+        <td>0%</td>
+        <td>Cinn Powder</td>
+    </tr>
+
+    <tr>
+        <td>Caramel Macchiato</td>
+        <td>M</td>
+        <td>50%</td>
+        <td>45%</td>
+        <td>Caramel Drizzel</td>
+    </tr>
+
+    <tr>
+        <td>Americano</td>
+        <td>M</td>
+        <td>50%</td>
+        <td>0%</td>
+        <td>None</td>
+    </tr>
+</table>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Customize your Coffee!</legend>
+
+       <div>
+           <label for="drink">Drink</label>
+           <input type="text" id="drink" name="drink">
+        </div>
+
+        <div>
+            <p>Choose your size</p>
+            <input type="radio" id="Small" name="size" value="small">
+            <label for="small">Small</label>
+            <input type="radio" id="Medium" name="Medium" value="Medium">
+            <label for="Medium">Medium</label>
+            <input type="radio" id="Large" name="Large" value="Large">
+            <label for="Large">Large</label>
+        </div>
+        <br>
+        <div>
+            <label for="ice">Choose how much Ice</label>
+            <select name="ice" id="ice">
+                <option value="100">100%</option>
+                <option value="75">75%</option>
+                <option value="50">50%</option>
+                <option value="25">25%</option>
+                <option value="0">0%</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="flavor">Choose your flavor</label>
+            <select name="flavor" id="flavor">
+                <option value="Caramel">Caramel</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Mocha">Mocha</option>
+                <option value="White Mocha">White Mocha</option>
+            </select>
+        </div>
+
+        <br>
+
+        <p>Top off your coffee with something delicious</p>
+        <div>
+            <input type="checkbox" id="cookie crumbs" name="cookie crumbs" value="cookie crumbs">
+            <label for="cookie crumbs">Cookie Crumbles</label>
+            
+            <input type="checkbox" id="Caramel sauce" name="Caramel sauce" value="Caramel sauce">
+            <label for="Caramel sauce">Caramel sauce</label>
+
+            <input type="checkbox" id="Cinn Powder" name="Cinn Powder" value="Cinn Powder">
+            <label for="Cinn Powder">Cinn Powder</label>
+
+
+
+
+
+        </div>
+
+
+
+    </fieldset>
+
+
+</form>
+
+
+</body>
+</html>
